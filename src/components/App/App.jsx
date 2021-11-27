@@ -22,7 +22,22 @@ function App() {
 
 // Use Axios to retrieve all data from the Gallery
 
-
+const getGallery = () => {
+  console.log('in getGallery GET ROUTE');
+// Do axios method to connect GET ROUTE
+      axios({
+        method: 'GET',
+        url: '/gallery',
+      })
+      .then((response) => {
+        console.log('this is the response from GET', response.data);
+    // take the data from the response and pass it to the server using setGalleryList
+      setGalleryList(response.data);
+      })
+      .catch((error) => {
+          console.log('GET /gallery failed!', error);
+      }); // end of Axios Get Route
+} // end of getGallery Function
 
 //  use Axios to update (PUT) the like count /gallery/like/:id.
 // PUT route function
