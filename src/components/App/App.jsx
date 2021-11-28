@@ -48,7 +48,7 @@ const updateLikes = () => {
 // use Axios to pass id from guest.data 
     axios({
       method: 'PUT',
-      url: (`/gallery/like/${id}`
+      url: (`/gallery/like/${id}`)
     })
     .then((response) => {
       console.log('this is the response from PUT', response);
