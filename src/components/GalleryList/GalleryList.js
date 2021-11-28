@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import galleryItems from '../../../server/modules/gallery.data';
+// import galleryItems from '../../../server/modules/gallery.data';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 // Pass gallery data using props to the GalleryList Component
