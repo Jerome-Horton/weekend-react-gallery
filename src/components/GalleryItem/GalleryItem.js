@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GalleryDescription from '../GalleryDescription/GalleryDescription';
 
 // Create Gallery Item function and pass it the individual gallery item via props.
     function galleryItem({item, updateLikes}) {
@@ -26,9 +27,9 @@ import { useState } from "react";
 
         return (
             <div>
-                {/* <galleryDescription
+                 <GalleryDescription
                     item = {item}
-                /> */}
+                /> 
                 <button onClick={ () => updateLikes(item.id)}>Love It</button>
                 <p>{item.likes}</p>
             </div>
