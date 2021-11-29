@@ -6,7 +6,7 @@
         <div>
             <img className="displayImage" 
                 onClick={ () => {
-                // displayDescription();
+                displayDescription();
             }} 
             src={item.path}/>
         </div>

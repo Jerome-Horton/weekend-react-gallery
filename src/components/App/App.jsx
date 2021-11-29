@@ -67,6 +67,7 @@ const updateLikes = () => {
         <Header />
         <GalleryList 
           gallery={gallery} 
+          updateLikes={updateLikes}
         />
         <Footer />
       </div>
