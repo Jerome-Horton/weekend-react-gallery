@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import GalleryDescription from '../GalleryDescription/GalleryDescription';
 import GalleryImages from '../GalleryImages/GalleryImages';
@@ -16,12 +17,11 @@ import GalleryImages from '../GalleryImages/GalleryImages';
 
 // Implemented a time count for image transition
 
-            timeOut(() => {
+            timeCount(() => {
                 setShowImage(true);
             }, 8000); // 8 secs
 
 }
-// Also new component for images.
 
 
         if(showImage) {
