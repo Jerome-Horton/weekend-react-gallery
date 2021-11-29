@@ -1,9 +1,10 @@
 
 function GalleryDescription () {
+    console.log('in GalleryDescription')
 
     return (
 
-        <div className="displayDescription">
+        <div className="Description">
 
         {item.description}
 
