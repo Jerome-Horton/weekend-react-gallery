@@ -9,15 +9,16 @@ import GalleryItem from '../GalleryItem/GalleryItem';
         return (
 
             <>
-                <div>
+                <ul>
                     {gallery.map((item) => {
+                        return (
                         <GalleryItem
                             key = {item.id}
                             item = {item}
                             updateLikes = {updateLikes}
                         />
-                    })}
-                </div>
+                    )})}
+                </ul>
             </>
         )
     }

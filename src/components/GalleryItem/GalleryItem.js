@@ -1,7 +1,8 @@
-
+import React from 'react';
 import { useState } from "react";
 import GalleryDescription from '../GalleryDescription/GalleryDescription';
 import GalleryImages from '../GalleryImages/GalleryImages';
+import './GalleryItem.css';
 
 // Create Gallery Item function and pass it the individual gallery item via props.
     function galleryItem({item, updateLikes}) {
