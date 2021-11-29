@@ -6,12 +6,14 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 // Connect Client to Server, Import Axios
 import axios from 'axios';
+// Import GalleryList Component
+import GalleryList from '../GalleryList/GalleryList';
 
 
 function App() {
 
 // Declare Gallery List array and assigned it useState.
-    let [galleryList, setGalleryList] = useState([]);
+    let [gallery, setGallery] = useState([]);
 
 // onload the APP function to the DOM, when page loads. 
     useEffect(() => {
@@ -32,7 +34,7 @@ const getGallery = () => {
       .then((response) => {
         console.log('this is the response from GET', response.data);
     // take the data from the response and pass it to the server using setGalleryList
-      setGalleryList(response.data);
+      setGallery(response.data);
       })
       .catch((error) => {
           console.log('GET /gallery failed!', error);
@@ -63,8 +65,9 @@ const updateLikes = () => {
   return (
       <div className="App">
         <Header />
-        <p>Gallery goes here</p>
-        <img src="images/Bob-Marley.jpeg"/>
+        <GalleryList 
+          gallery={gallery} 
+        />
         <Footer />
       </div>
     );
