@@ -18,7 +18,7 @@ import './GalleryItem.css';
 
 // Implemented a time count for image transition
 
-            timeCount(() => {
+            setTimeOut(() => {
                 setShowImage(true);
             }, 8000); // 8 secs
 
@@ -32,7 +32,7 @@ import './GalleryItem.css';
                      <GalleryImages 
                      item = {item}
                      displayDescription = {displayDescription}/> 
-                    <button onClick={ () => updateLikes(item.id)}>Love It</button>
+                    <button  className='love-it' onClick={ () => updateLikes(item.id)}>Love It</button>
                     <p>{item.likes}</p>
                 </div>
             )
@@ -43,7 +43,8 @@ import './GalleryItem.css';
                  <GalleryDescription
                     item = {item}
                 /> 
-                <button onClick={ () => updateLikes(item.id)}>Love It</button>
+                <button onClick={ () => updateLikes(item.id)}>
+                Love It</button>
                 <p>{item.likes}</p>
             </div>
         

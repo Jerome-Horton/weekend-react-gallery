@@ -1,7 +1,13 @@
 .displayImage {
+  
     width: 400px;
     height: 400px;
     display:block;
     border: 2px solid gold;
-    padding:.25em;
+    padding: 0.5em;
+}
+
+.love-it {
+    border: 5px solid black;
+    margin-top: 10px;
 }

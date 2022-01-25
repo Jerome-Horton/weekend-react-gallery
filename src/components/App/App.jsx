@@ -44,7 +44,7 @@ const getGallery = () => {
 //  use Axios to update (PUT) the like count /gallery/like/:id.
 // PUT route function
 
-const updateLikes = () => {
+const updateLikes = (id) => {
   console.log('in updateLikes PUT route'); 
 
 // use Axios to pass id from guest.data 

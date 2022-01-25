@@ -9,15 +9,16 @@ import GalleryItem from '../GalleryItem/GalleryItem';
         return (
 
             <>
-                <ul>
+                <ul style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {gallery.map((item) => {
                         return (
                         <GalleryItem
                             key = {item.id}
                             item = {item}
-                            updateLikes = {updateLikes}
+                            updateLikes ={() => updateLikes(item.id)}
                         />
-                    )})}
+                    )
+                    })}
                 </ul>
             </>
         )
