@@ -18,9 +18,9 @@ import './GalleryItem.css';
 
 // Implemented a time count for image transition
 
-            setTimeOut(() => {
+            setTimeout(() => {
                 setShowImage(true);
-            }, 8000); // 8 secs
+            }, 4000); // 8 secs
 
 }
 

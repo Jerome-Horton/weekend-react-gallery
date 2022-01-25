@@ -3,11 +3,11 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer>
-        <h6>All Rights Reserved © 2021 by Jerome Horton
+        <footer className="App-footer">
+        <h6 className="footer-title">All Rights Reserved © 2022 by Jerome Horton
         </h6>
       </footer>
-    );
+        )
   }
 
 
